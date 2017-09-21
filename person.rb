@@ -6,7 +6,7 @@ class Person
   end
 
   def to_s
-    puts "#{@name} is #{@age} years old"
+    "#{@name} is #{@age} years old"
   end
 
   def increment_age
@@ -22,10 +22,10 @@ class Person
 end
 
 my_person = Person.new('Bill')
-my_person.to_s
+puts "#{my_person.to_s}"
 
 20.times do
   my_person.increment_age
 end
 
-my_person.to_s
+puts "#{my_person.to_s}"
